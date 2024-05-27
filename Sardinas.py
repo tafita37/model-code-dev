@@ -27,10 +27,8 @@ def isCode(mots):
         uLMoinsUn = getLMoins1L(mots, oldNextList)
         nextL += uLMoinsUn
         if hasMotVide(nextL):
-            # print("Ce langage n'est pas un code")
             return False
         if set(nextL) in [set(item) for item in listeLn] and i != 0:
-            # print("Ce langage est un code")
             return True
         listeLn.append(nextL.copy())
         i += 1
